@@ -345,7 +345,7 @@
 						if (!filters || !p.search) { return filter; }
 						if (typeof filters === "string") {
 							try {
-								filters = $.parseJSON(filters);
+								filters = JSON.parse(filters);
 							} catch (ignore) {
 								filters = {};
 							}

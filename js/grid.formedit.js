@@ -195,7 +195,7 @@
 						});
 					};
 				if (typeof defaultFilters === "string") {
-					defaultFilters = $.jgrid.trim(defaultFilters) !== "" ? $.parseJSON(defaultFilters) : undefined;
+					defaultFilters = $.jgrid.trim(defaultFilters) !== "" ? JSON.parse(defaultFilters) : undefined;
 				}
 				$(themodalSelector).remove();
 				function showFilter($filter) {
