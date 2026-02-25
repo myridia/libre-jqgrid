@@ -884,7 +884,7 @@
 		},
 		addFilter: function (pfilter) {
 			if (typeof pfilter === "string") {
-				pfilter = $.parseJSON(pfilter);
+				pfilter = JSON.parse(pfilter);
 			}
 			this.each(function () {
 				this.p.filter = pfilter;

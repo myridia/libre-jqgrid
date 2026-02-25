@@ -72,7 +72,7 @@
 						var cnfg = $(options.xmlGrid.config, xml)[0], xmldata = $(options.xmlGrid.data, xml)[0], jstr, jstr1, key, svdatatype;
 						if (xmlJsonClass.xml2json) {
 							jstr = xmlJsonClass.xml2json(cnfg, " ");
-							jstr = $.parseJSON(jstr);
+							jstr = JSON.parse(jstr);
 							for (key in jstr) {
 								if (jstr.hasOwnProperty(key)) {
 									jstr1 = jstr[key];
@@ -95,7 +95,7 @@
 					},
 					jsonConvert = function (jsonstr, options) {
 						if (jsonstr && typeof jsonstr === "string") {
-							var json = $.parseJSON(jsonstr),
+							var json = JSON.parse(jsonstr),
 								gprm = json[options.jsonGrid.config],
 								jdata = json[options.jsonGrid.data], svdatatype;
 

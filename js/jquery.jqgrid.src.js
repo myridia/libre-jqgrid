@@ -1009,8 +1009,13 @@
 		isFunction: function (value) {
 			return typeof value === "function";
 		},
-		trim: function (value) {
+	        trim: function (value) {
+		    if(value) {
 			return String.prototype.trim.call(value);
+		    }
+		    else {
+			return "";
+		    }
 		},
 		htmlDecode: function (value) {
 			if (value && (value === "&nbsp;" ||
@@ -1174,7 +1179,7 @@
 			return v;
 		},
 		stripPref: function (pref, id) {
-			var obj = $.type(pref);
+			var obj = typeof pref;
 			if (obj === "string" || obj === "number") {
 				pref = String(pref);
 				id = pref !== "" ? String(id).replace(String(pref), "") : id;
@@ -2827,7 +2832,7 @@
 							},
 							processJsonError = function (msg) {
 								try {
-									var errorInfo = $.parseJSON(msg), errorMessages = [], errorProp;
+									var errorInfo = JSON.parse(msg), errorMessages = [], errorProp;
 									for (errorProp in errorInfo) {
 										if (errorInfo.hasOwnProperty(errorProp) && errorProp !== "StackTrace") {
 											errorMessages.push(errorProp + ": " + errorInfo[errorProp]);
@@ -4534,7 +4539,7 @@
 					if (p.search === true) {
 						var srules = p.postData[(p.searching || {}).sFilter || p.prmNames.filters];
 						if (srules) {
-							if (typeof srules === "string") { srules = $.parseJSON(srules); }
+							if (typeof srules === "string") { srules = JSON.parse(srules); }
 							tojLinq(srules);
 						} else {
 							try {
@@ -4877,7 +4882,7 @@
 								break;
 							case "jsonstring":
 								beginReq.call(self);
-								dstr = p.datastr && typeof p.datastr === "string" ? $.parseJSON(p.datastr) : p.datastr;
+								dstr = p.datastr && typeof p.datastr === "string" ? JSON.parse(p.datastr) : p.datastr;
 								readInput.call(self, dstr);
 								finalReportSteps();
 								if (p.forceClientSorting) { readLocal(); }
@@ -10202,7 +10207,7 @@
 						if (!filters || !p.search) { return filter; }
 						if (typeof filters === "string") {
 							try {
-								filters = $.parseJSON(filters);
+								filters = JSON.parse(filters);
 							} catch (ignore) {
 								filters = {};
 							}
@@ -12466,7 +12471,7 @@
 		},
 		addFilter: function (pfilter) {
 			if (typeof pfilter === "string") {
-				pfilter = $.parseJSON(pfilter);
+				pfilter = JSON.json(pfilter);
 			}
 			this.each(function () {
 				this.p.filter = pfilter;
@@ -12914,7 +12919,7 @@
 						});
 					};
 				if (typeof defaultFilters === "string") {
-					defaultFilters = $.jgrid.trim(defaultFilters) !== "" ? $.parseJSON(defaultFilters) : undefined;
+					defaultFilters = $.jgrid.trim(defaultFilters) !== "" ? JSON.parse(defaultFilters) : undefined;
 				}
 				$(themodalSelector).remove();
 				function showFilter($filter) {
@@ -15985,7 +15990,7 @@
 						var cnfg = $(options.xmlGrid.config, xml)[0], xmldata = $(options.xmlGrid.data, xml)[0], jstr, jstr1, key, svdatatype;
 						if (xmlJsonClass.xml2json) {
 							jstr = xmlJsonClass.xml2json(cnfg, " ");
-							jstr = $.parseJSON(jstr);
+							jstr = JSON.parse(jstr);
 							for (key in jstr) {
 								if (jstr.hasOwnProperty(key)) {
 									jstr1 = jstr[key];
@@ -16008,7 +16013,7 @@
 					},
 					jsonConvert = function (jsonstr, options) {
 						if (jsonstr && typeof jsonstr === "string") {
-							var json = $.parseJSON(jsonstr),
+							var json = JSON.parse(jsonstr),
 								gprm = json[options.jsonGrid.config],
 								jdata = json[options.jsonGrid.data], svdatatype;
 

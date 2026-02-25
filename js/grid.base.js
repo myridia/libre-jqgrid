@@ -2827,7 +2827,7 @@
 							},
 							processJsonError = function (msg) {
 								try {
-									var errorInfo = $.parseJSON(msg), errorMessages = [], errorProp;
+									var errorInfo = JSON.parse(msg), errorMessages = [], errorProp;
 									for (errorProp in errorInfo) {
 										if (errorInfo.hasOwnProperty(errorProp) && errorProp !== "StackTrace") {
 											errorMessages.push(errorProp + ": " + errorInfo[errorProp]);
@@ -4534,7 +4534,7 @@
 					if (p.search === true) {
 						var srules = p.postData[(p.searching || {}).sFilter || p.prmNames.filters];
 						if (srules) {
-							if (typeof srules === "string") { srules = $.parseJSON(srules); }
+							if (typeof srules === "string") { srules = JSON.parse(srules); }
 							tojLinq(srules);
 						} else {
 							try {
@@ -4877,7 +4877,7 @@
 								break;
 							case "jsonstring":
 								beginReq.call(self);
-								dstr = p.datastr && typeof p.datastr === "string" ? $.parseJSON(p.datastr) : p.datastr;
+								dstr = p.datastr && typeof p.datastr === "string" ? JSON.parse(p.datastr) : p.datastr;
 								readInput.call(self, dstr);
 								finalReportSteps();
 								if (p.forceClientSorting) { readLocal(); }
