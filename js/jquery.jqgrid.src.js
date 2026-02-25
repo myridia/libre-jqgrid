@@ -1179,7 +1179,7 @@
 			return v;
 		},
 		stripPref: function (pref, id) {
-			var obj = $.type(pref);
+			var obj = typeof pref;
 			if (obj === "string" || obj === "number") {
 				pref = String(pref);
 				id = pref !== "" ? String(id).replace(String(pref), "") : id;
