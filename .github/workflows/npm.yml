@@ -36,12 +36,12 @@ jobs:
      - name: build dist with grunt
        run: |
         grunt default
-        ls
         ls dist 
         
      - name: publish to npm 
        run: |
         npm ci
+        ls 
         #npm run build --if-present
-        npm publish --provenance --access public
+        #npm publish --provenance --access public
   
