@@ -19,7 +19,7 @@
     }
   ],
   "title": "libre jqGrid",
-  "version": "4.17.1",
+  "version": "4.17.2",
   "description": "maintained version of free-jqGrid",
   "main": "js/jquery.jqgrid.src.js",
   "style": "css/ui.jqgrid.css",
