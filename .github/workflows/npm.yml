@@ -29,12 +29,13 @@ jobs:
          always-auth: true
          
      - name: install npm
-        run: |
-          npm install 
+       run: |
+          ls 
+          #npm install --package-lock-only
 
      - name: build dist with grunt
-        run: |
-          grunt default
+       run: |
+        grunt default
           
      #- run: npm ci
      #- run: npm run build --if-present
