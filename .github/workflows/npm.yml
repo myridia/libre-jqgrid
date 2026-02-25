@@ -31,12 +31,12 @@ jobs:
      - name: install npm
        run: |
           ls 
-          npm install --package-lock-only
+          npm install
 
      - name: build dist with grunt
        run: |
-        grunt default
-          
+        #grunt default
+        ls  
      #- run: npm ci
      #- run: npm run build --if-present
      #- run: npm publish --provenance --access public
