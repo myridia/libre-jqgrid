@@ -30,7 +30,7 @@ jobs:
          
      - name: install npm
        run: |
-          npm install 
+          npm install --package-lock-only
 
      - name: build dist with grunt
        run: |
