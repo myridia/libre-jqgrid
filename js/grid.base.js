@@ -1174,7 +1174,7 @@
 			return v;
 		},
 		stripPref: function (pref, id) {
-			var obj = $.type(pref);
+			var obj = typeof pref;
 			if (obj === "string" || obj === "number") {
 				pref = String(pref);
 				id = pref !== "" ? String(id).replace(String(pref), "") : id;
@@ -3262,7 +3262,7 @@
 					for (i = 0; i < n; i++) {
 						name = additionalProperties[i];
 						if (name != null && !arrayReaderInfos.hasOwnProperty(name)) {
-							if (typeof name === "object" && $.type(name.name) === "string") {
+							if (typeof name === "object" && typeof name.name === "string") {
 								name = name.name;
 							}
 							arrayReaderInfos[name] = { name: name, index: i, order: order, type: 1 };
