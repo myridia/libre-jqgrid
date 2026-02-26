@@ -67,7 +67,7 @@
 			// Compatible mode old versions
 			var oMuligrid = {}, args = $.makeArray(arguments).slice(1);
 
-			if ($.type(args[0]) === "object") {
+			if (typeof args[0] === "object") {
 				oMuligrid = args[0];
 			} else {
 				if (keys !== undefined) { oMuligrid.keys = keys; }
@@ -233,7 +233,7 @@
 				fatalErrorFunction = jgrid.defaults != null && isFunction(jgrid.defaults.fatalError) ? jgrid.defaults.fatalError : alert;
 			if (!$t.grid || p == null) { return; }
 
-			if ($.type(args[0]) === "object") {
+			if (typeof args[0] === "object") {
 				o = args[0];
 			} else {
 				if (isFunction(successfunc)) { o.successfunc = successfunc; }
@@ -462,7 +462,7 @@
 			// Compatible mode old versions
 			var args = $.makeArray(arguments).slice(1), oMuligrid = {};
 
-			if ($.type(args[0]) === "object") {
+			if (typeof args[0] === "object") {
 				oMuligrid = args[0];
 			} else {
 				if ($.jgrid.isFunction(afterrestorefunc)) { oMuligrid.afterrestorefunc = afterrestorefunc; }

@@ -19,7 +19,7 @@
     }
   ],
   "title": "libre jqGrid",
-  "version": "4.17.4",
+  "version": "4.17.5",
   "description": "maintained version of free-jqGrid",
   "main": "js/jquery.jqgrid.src.js",
   "style": "css/ui.jqgrid.css",
@@ -48,8 +48,8 @@
     "grouping",
     "searching"
   ],
-  "author": "Myridia <info@myridia.com>",
-  "license": "(MIT OR GPL-3.0)",
+  "author": "Myridia Company<info@myridia.com>",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/myridia/libre-jqgrid/issues"
   },

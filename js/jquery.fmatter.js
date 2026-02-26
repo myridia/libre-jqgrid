@@ -228,7 +228,7 @@
 	//opts can be id:row id for the row, rowdata:the data for the row, colmodel:the column model for this column
 	//example {id:1234,}
 	$.extend(fmatter, {
-		// one can consider to use $.type instead of some functions below (see http://api.jquery.com/jQuery.type/)
+		// one can consider to use typeof instead of some functions below (see http://api.jquery.com/jQuery.type/)
 		isObject: function (o) {
 			return (o && (typeof o === "object" || $.jgrid.isFunction(o))) || false;
 		},

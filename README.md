@@ -1,4 +1,4 @@
-# ![libre-jqgrid](pages/img/logo.png) libre-jqgrid
+# ![libre-jqgrid](pages/public/img/logo.png) libre-jqgrid
 A modern, open-source fork of jqGrid, designed for seamless integration with modern JavaScript environments and compatibility with jQuery 4.0 and beyond.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
