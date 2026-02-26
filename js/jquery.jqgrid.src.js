@@ -1009,13 +1009,8 @@
 		isFunction: function (value) {
 			return typeof value === "function";
 		},
-	        trim: function (value) {
-		    if(value) {
+		trim: function (value) {
 			return String.prototype.trim.call(value);
-		    }
-		    else {
-			return "";
-		    }
 		},
 		htmlDecode: function (value) {
 			if (value && (value === "&nbsp;" ||
@@ -12471,7 +12466,7 @@
 		},
 		addFilter: function (pfilter) {
 			if (typeof pfilter === "string") {
-				pfilter = JSON.json(pfilter);
+				pfilter = JSON.parse(pfilter);
 			}
 			this.each(function () {
 				this.p.filter = pfilter;
@@ -16357,7 +16352,7 @@
 				fatalErrorFunction = jgrid.defaults != null && isFunction(jgrid.defaults.fatalError) ? jgrid.defaults.fatalError : alert;
 			if (!$t.grid || p == null) { return; }
 
-			if ( typeof args[0]  === "object") {
+			if (typeof args[0] === "object") {
 				o = args[0];
 			} else {
 				if (isFunction(successfunc)) { o.successfunc = successfunc; }
@@ -16586,7 +16581,7 @@
 			// Compatible mode old versions
 			var args = $.makeArray(arguments).slice(1), oMuligrid = {};
 
-			if (typeof  args[0] === "object") {
+			if (typeof args[0] === "object") {
 				oMuligrid = args[0];
 			} else {
 				if ($.jgrid.isFunction(afterrestorefunc)) { oMuligrid.afterrestorefunc = afterrestorefunc; }
@@ -20316,7 +20311,7 @@
 	//opts can be id:row id for the row, rowdata:the data for the row, colmodel:the column model for this column
 	//example {id:1234,}
 	$.extend(fmatter, {
-		// one can consider to use typeof  instead of some functions below (see http://api.jquery.com/jQuery.type/)
+		// one can consider to use typeof instead of some functions below (see http://api.jquery.com/jQuery.type/)
 		isObject: function (o) {
 			return (o && (typeof o === "object" || $.jgrid.isFunction(o))) || false;
 		},
