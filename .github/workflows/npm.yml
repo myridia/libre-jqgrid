@@ -31,14 +31,16 @@ jobs:
         head -n 10 js/jquery.jqgrid.src.js   
 
 
-    # - name: setup  node
-    #   uses: actions/setup-node@v4
-    #   with:
-    #     node-version: '24.x'            # Your node version
-    #     registry-url: 'https://registry.npmjs.org'
-    #     always-auth: true
+     - name: setup  node
+       uses: actions/setup-node@v4
+       with:
+         node-version: '24.x'            # Your node version
+         registry-url: 'https://registry.npmjs.org'
+         always-auth: true
 
-
+     - name: check version 
+       run: |
+        head -n 10 js/jquery.jqgrid.src.js 
         
      #- name: install npm
      #  run: |
