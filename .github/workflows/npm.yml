@@ -20,7 +20,7 @@ jobs:
           core.info(`OIDC token: ${token.substring(0,20)}...`);
 
      - name: checkout 
-       uses: actions/checkout@v4
+       uses: actions/checkout@v6
        
      - name: setup  node
        uses: actions/setup-node@v4
