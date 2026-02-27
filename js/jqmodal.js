@@ -1,15 +1,7 @@
 /**
- * jqModal - Minimalist Modaling with jQuery
- *   (http://dev.iceburg.net/jquery/jqmodal/)
- *
- * Copyright (c) 2007,2008 Brice Burgess <bhb@iceburg.net>
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
- *
- * $Version: 07/06/2008 +r13
- * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
  */
 /*jslint browser: true, nomen: true, plusplus: true, white: true */
 /*global jQuery, define, exports, module, require */

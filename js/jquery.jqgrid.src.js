@@ -2,13 +2,9 @@
 // @compilation_level SIMPLE_OPTIMIZATIONS
 
 /**
- * @license jqGrid 4.15.9 - free jqGrid: https://github.com/rany2/jqGrid
- * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
- * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Copyright (c) 2023, rany2, ranygh@riseup.net
- * Dual licensed under the MIT and GPL licenses
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
  */
 //jsHint options
 /*jshint eqnull:true */
@@ -8517,13 +8513,9 @@
 	// end module grid.base
 
 	/**
-	 * jqGrid extension for cellediting Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.celledit
 	var getTdByColumnIndex = function (tr, iCol) {
@@ -9120,13 +9112,9 @@
 	// end module grid.celledit
 
 	/**
-	 * jqGrid common function
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Maintained by rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	*/
 	// begin module grid.common
 	var getGuiStyles = base.getGuiStyles, getGridRes = base.getGridRes;
@@ -9911,15 +9899,9 @@
 	// end module grid.common
 
 	/**
-	 * jqGrid extension for custom methods
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 *
-	 * Wildraid wildraid@mail.ru
-	 * Oleg Kiriljuk oleg.kiriljuk@ok-soft-gmbh.com
-	 * rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.custom
 	jgrid.extend({
@@ -11651,16 +11633,9 @@
 	// end module grid.custom
 
 	/**
-	 * jqFilter  jQuery jqGrid filter addon.
-	 * Copyright (c) 2011-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 *
-	 * The work is inspired from this Stefan Pirvu
-	 * http://www.codeproject.com/KB/scripting/json-filtering.aspx
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	 **/
 	// begin module grid.filter
 	$.fn.jqFilter = function (arg) {
@@ -12478,25 +12453,9 @@
 	// end module grid.filter
 
 	/**
-	 * The below work is licensed under Creative Commons GNU LGPL License.
-	 *
-	 * Original work:
-	 *
-	 * License:     http://creativecommons.org/licenses/LGPL/2.1/
-	 * Author:      Stefan Goessner/2006
-	 * Web:         http://goessner.net/
-	 *
-	 * Modifications made:
-	 * Version:     0.9-p5
-	 * Description: Restructured code, JSLint validated (no strict whitespaces),
-	 *  			added handling of empty arrays, empty strings, and int/floats values.
-	 * Author:      Michael Schøler/2008-01-29
-	 * Web:         http://michael.hinnerup.net/blog/2008/01/26/converting-json-to-xml-and-xml-to-json/
-	 *
-	 * Description: json2xml added support to convert functions as CDATA
-	 * so it will be easy to write characters that cause some problems when convert
-	 *
-	 * Author:      Tony Tomov
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	 **/
 	// begin module jsonxml
 	var xmlJsonClass = {
@@ -12777,13 +12736,9 @@
 	// end module jsonxml
 
 	/**
-	 * jqGrid extension for form editing Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.formedit
 	var jgridFeedback = jgrid.feedback, fullBoolFeedback = jgrid.fullBoolFeedback, builderFmButon = jgrid.builderFmButon,
@@ -15954,11 +15909,9 @@
 	// end module grid.grouping
 
 	/**
-	 * jqGrid extension for constructing Grid Data from external file
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.import
 	$.jgrid.extend({
@@ -16163,13 +16116,9 @@
 	// end module grid.import
 
 	/**
-	 * jqGrid extension for manipulating Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com,  http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.inlinedit
 	var editFeedback = function (o) {
@@ -16902,14 +16851,9 @@
 	// end module grid.inlinedit
 
 	/**
-	 * jqGrid addons using jQuery UI
-	 * Author: Mark Williams
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Maintained by rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 * depends on jQuery UI
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.jqueryui
 	var $UiMultiselect = $.ui != null ? $.ui.multiselect : null,
@@ -17813,15 +17757,9 @@
 	// end module grid.jqueryui
 
 	/**
-	 * jqGrid pivot functions
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * The module is created initially by Tony Tomov and it's full rewritten
-	 * for free jqGrid: https://github.com/free-jqgrid/jqGrid by Oleg Kiriljuk
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	*/
 	// begin module grid.pivot
 	function Aggregation(aggregator, context, pivotOptions) {
@@ -18635,13 +18573,9 @@
 	// end module grid.pivot
 
 	/**
-	 * jqGrid extension for SubGrid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.subgrid
 	var subGridFeedback = function () {
@@ -18976,10 +18910,9 @@
 	// end module grid.subgrid
 
 	/**
-	 Transform a table to a jqGrid.
-	 Peter Romianowski <peter.romianowski@optivo.de>
-	 If the first column of the table contains checkboxes or
-	 radiobuttons then the jqGrid is made selectable.
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	*/
 	// begin module grid.tbltogrid
 	window.tableToGrid = function (selector, options) {
@@ -19079,13 +19012,9 @@
 	// end module grid.tbltogrid
 
 	/**
-	 * jqGrid extension - Tree Grid
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module grid.treegrid
 	var treeGridFeedback = function () {
@@ -19723,15 +19652,9 @@
 	// end module grid.treegrid
 
 	/**
-	 * jqDnR - Minimalistic Drag'n'Resize for jQuery.
-	 *
-	 * Copyright (c) 2007 Brice Burgess <bhb@iceburg.net>, http://www.iceburg.net
-	 * Licensed under the MIT License:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 *
-	 * $Version: 2007.08.19 +r2
-	 * Updated by Oleg Kiriljuk to support touch devices
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	 */
 	// begin module jqdnr
 	var namespace = ".jqGrid", mouseDown = "mousedown", mouseMove = "mousemove", mouseUp = "mouseup",
@@ -19876,17 +19799,9 @@
 	// end module jqdnr
 
 	/**
-	 * jqModal - Minimalist Modaling with jQuery
-	 *   (http://dev.iceburg.net/jquery/jqmodal/)
-	 *
-	 * Copyright (c) 2007,2008 Brice Burgess <bhb@iceburg.net>
-	 * Dual licensed under the MIT and GPL licenses:
-	 *   http://www.opensource.org/licenses/mit-license.php
-	 *   http://www.gnu.org/licenses/gpl.html
-	 *
-	 * $Version: 07/06/2008 +r13
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	 */
 	// begin module jqmodal
 	var jqmHashLength = 0,
@@ -20133,18 +20048,9 @@
 	// end module jqmodal
 
 	/**
-	 * formatter for values but most of the values if for jqGrid
-	 * Some of this was inspired and based on how YUI does the table datagrid but in jQuery fashion
-	 * we are trying to keep it as light as possible
-	 * Joshua Burnett josh@9ci.com
-	 * http://www.greenbill.com
-	 *
-	 * Changes from Tony Tomov tony@trirand.com
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 *
+	 * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+	 * GNU General Public License v3.0 or later
+	 * http://www.gnu.org/licenses/gpl-3.0.html
 	**/
 	// begin module jquery.fmatter
 	$.fmatter = $.fmatter || {};

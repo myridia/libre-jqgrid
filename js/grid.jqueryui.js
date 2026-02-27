@@ -1,12 +1,7 @@
 /**
- * jqGrid addons using jQuery UI
- * Author: Mark Williams
- * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Maintained by rany2, ranygh@riseup.net
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl-2.0.html
- * depends on jQuery UI
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
 **/
 
 /*jshint evil:true, eqeqeq:false, eqnull:true, devel:true */

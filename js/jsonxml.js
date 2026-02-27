@@ -1,23 +1,7 @@
 /**
- * The below work is licensed under Creative Commons GNU LGPL License.
- *
- * Original work:
- *
- * License:     http://creativecommons.org/licenses/LGPL/2.1/
- * Author:      Stefan Goessner/2006
- * Web:         http://goessner.net/
- *
- * Modifications made:
- * Version:     0.9-p5
- * Description: Restructured code, JSLint validated (no strict whitespaces),
- *  			added handling of empty arrays, empty strings, and int/floats values.
- * Author:      Michael Schøler/2008-01-29
- * Web:         http://michael.hinnerup.net/blog/2008/01/26/converting-json-to-xml-and-xml-to-json/
- *
- * Description: json2xml added support to convert functions as CDATA
- * so it will be easy to write characters that cause some problems when convert
- *
- * Author:      Tony Tomov
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
  **/
 
 /*global jQuery, alert, define, exports, module, require */

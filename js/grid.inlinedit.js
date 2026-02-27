@@ -1,11 +1,7 @@
 /**
- * jqGrid extension for manipulating Grid Data
- * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com,  http://trirand.com/blog/
- * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Copyright (c) 2023, rany2, ranygh@riseup.net
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
 **/
 
 /*jslint browser: true, eqeq: true, nomen: true, vars: true, devel: true, unparam: true, plusplus: true, white: true, todo: true */
