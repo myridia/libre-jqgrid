@@ -4,4 +4,6 @@ node_modules
 js/min
 *.min.js
 js/min/i18n/min
+js/jquery.jqgrid.src.js
+js/jquery.jqgrid.min.js
 

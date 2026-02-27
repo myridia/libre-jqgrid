@@ -1005,8 +1005,13 @@
 		isFunction: function (value) {
 			return typeof value === "function";
 		},
-		trim: function (value) {
+	        trim: function (value) {
+		    if(value) {  
 			return String.prototype.trim.call(value);
+		    }
+		    else {
+                        return "";
+		    }
 		},
 		htmlDecode: function (value) {
 			if (value && (value === "&nbsp;" ||
@@ -1197,7 +1202,6 @@
 			return basePath;
 		},
 		parseDate: function (format, date, newformat, opts) {
-
 			var token = /\\.|[dDjlNSwzWFmMntLoYyaABgGhHisueIOPTZcrU]/g, dM, k, hl, timestamp = 0, offset = 0,
 				timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[\-+]\d{4})?)\b/g,
 				timezoneClip = /[^\-+\dA-Z]/g,
