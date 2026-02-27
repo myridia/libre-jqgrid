@@ -1,8 +1,7 @@
 /**
- Transform a table to a jqGrid.
- Peter Romianowski <peter.romianowski@optivo.de>
- If the first column of the table contains checkboxes or
- radiobuttons then the jqGrid is made selectable.
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
 */
 /*jslint browser: true, plusplus: true, white: true */
 /*global jQuery, define, exports, module, require */
@@ -47,7 +46,7 @@
 			var self = this, $self = $(this), w, inputCheckbox, inputRadio, selectMultiple, selectSingle, selectable, a, id,
 				colModel = [], colNames = [], data = [], rowIds = [], rowChecked = [];
 			if (self.grid) {
-				return;//Adedd by Tony Tomov
+				return;
 			}
 			// This is a small "hack" to make the width of the jqGrid 100%
 			$self.width("99%");

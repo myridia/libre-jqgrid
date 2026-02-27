@@ -1,3 +1,10 @@
 dist
 node_modules
 .tscache
+js/min
+*.min.js
+js/min/i18n/min
+js/jquery.jqgrid.src.js
+js/jquery.jqgrid.min.js
+js/jquery.jqgrid.min.js.map
+js/i18n/min/

@@ -1,10 +1,7 @@
 /**
- * @license jqGrid Indonesian Translation
- * Tony Tomov tony@trirand.com
- * http://trirand.com/blog/
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl.html
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
 **/
 
 /*jslint white: true */

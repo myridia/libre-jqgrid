@@ -2,13 +2,9 @@
 // @compilation_level SIMPLE_OPTIMIZATIONS
 
 /**
- * @license jqGrid 4.15.9 - free jqGrid: https://github.com/rany2/jqGrid
- * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
- * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Copyright (c) 2023, rany2, ranygh@riseup.net
- * Dual licensed under the MIT and GPL licenses
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
  */
 //jsHint options
 /*jshint eqnull:true */
@@ -1009,8 +1005,13 @@
 		isFunction: function (value) {
 			return typeof value === "function";
 		},
-		trim: function (value) {
+	        trim: function (value) {
+		    if(value) {  
 			return String.prototype.trim.call(value);
+		    }
+		    else {
+                        return "";
+		    }
 		},
 		htmlDecode: function (value) {
 			if (value && (value === "&nbsp;" ||
@@ -1201,12 +1202,6 @@
 			return basePath;
 		},
 		parseDate: function (format, date, newformat, opts) {
-			// It seems that the code was "imported" by Tony from http://blog.stevenlevithan.com/archives/date-time-format
-			// Thus I include the reference to original
-			// Date Format 1.2.3 (c) 2007-2009 Steven Levithan <stevenlevithan.com> MIT license
-			// The code can be found on https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js
-			// It would be probabbly good idea to support original date format additionally to the
-			// PHP data format used below.
 			var token = /\\.|[dDjlNSwzWFmMntLoYyaABgGhHisueIOPTZcrU]/g, dM, k, hl, timestamp = 0, offset = 0,
 				timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[\-+]\d{4})?)\b/g,
 				timezoneClip = /[^\-+\dA-Z]/g,

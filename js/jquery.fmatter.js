@@ -1,16 +1,7 @@
 /**
- * formatter for values but most of the values if for jqGrid
- * Some of this was inspired and based on how YUI does the table datagrid but in jQuery fashion
- * we are trying to keep it as light as possible
- * Joshua Burnett josh@9ci.com
- * http://www.greenbill.com
- *
- * Changes from Tony Tomov tony@trirand.com
- * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
+ * @license libre-jqgrid X.XX.X - libre-jqgrid: https://github.com/myridia/libre-jqgrid
+ * GNU General Public License v3.0 or later
+ * http://www.gnu.org/licenses/gpl-3.0.html
 **/
 /*jshint eqeqeq:false */
 /*jslint
