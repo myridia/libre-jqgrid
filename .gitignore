@@ -6,4 +6,5 @@ js/min
 js/min/i18n/min
 js/jquery.jqgrid.src.js
 js/jquery.jqgrid.min.js
-
+js/jquery.jqgrid.min.js.map
+js/i18n/min/
