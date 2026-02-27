@@ -46,7 +46,7 @@
 			var self = this, $self = $(this), w, inputCheckbox, inputRadio, selectMultiple, selectSingle, selectable, a, id,
 				colModel = [], colNames = [], data = [], rowIds = [], rowChecked = [];
 			if (self.grid) {
-				return;//Adedd by Tony Tomov
+				return;
 			}
 			// This is a small "hack" to make the width of the jqGrid 100%
 			$self.width("99%");
