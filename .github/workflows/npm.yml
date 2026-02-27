@@ -46,13 +46,11 @@ jobs:
        run: |
         head -n 10 dist/jquery.jqgrid.src.js 
         head -n 10 js/jquery.jqgrid.src.js 
-      # clear 
-      # head -n 2 dist/jquery.jqgrid.min.j
-        
-     #- name: publish to npm 
-     #  run: |
-     #   npm ci
-     #   ls 
-     #   npm pack
-     #   npm publish --provenance --access public
+
+     - name: publish to npm 
+       run: |
+        npm ci
+        ls 
+        npm pack
+        npm publish --provenance --access public
   
