@@ -32,6 +32,7 @@ jobs:
      - name: install npm
        run: |
           ls 
+          npm cache clean --force
           npm install
 
      - name: build dist with grunt
