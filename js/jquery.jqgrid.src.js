@@ -1199,12 +1199,6 @@
 			return basePath;
 		},
 		parseDate: function (format, date, newformat, opts) {
-			// It seems that the code was "imported" by Tony from http://blog.stevenlevithan.com/archives/date-time-format
-			// Thus I include the reference to original
-			// Date Format 1.2.3 (c) 2007-2009 Steven Levithan <stevenlevithan.com> MIT license
-			// The code can be found on https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js
-			// It would be probabbly good idea to support original date format additionally to the
-			// PHP data format used below.
 			var token = /\\.|[dDjlNSwzWFmMntLoYyaABgGhHisueIOPTZcrU]/g, dM, k, hl, timestamp = 0, offset = 0,
 				timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[\-+]\d{4})?)\b/g,
 				timezoneClip = /[^\-+\dA-Z]/g,
@@ -8514,15 +8508,6 @@
 	});
 	// end module grid.base
 
-	/**
-	 * jqGrid extension for cellediting Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
 	// begin module grid.celledit
 	var getTdByColumnIndex = function (tr, iCol) {
 			var $t = this, frozenRows = $t.grid.fbRows;
@@ -9117,15 +9102,7 @@
 	});
 	// end module grid.celledit
 
-	/**
-	 * jqGrid common function
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Maintained by rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	*/
+
 	// begin module grid.common
 	var getGuiStyles = base.getGuiStyles, getGridRes = base.getGridRes;
 
@@ -9908,17 +9885,7 @@
 	});
 	// end module grid.common
 
-	/**
-	 * jqGrid extension for custom methods
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 *
-	 * Wildraid wildraid@mail.ru
-	 * Oleg Kiriljuk oleg.kiriljuk@ok-soft-gmbh.com
-	 * rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
+
 	// begin module grid.custom
 	jgrid.extend({
 		getColProp: function (colname) {
@@ -11648,18 +11615,7 @@
 	});
 	// end module grid.custom
 
-	/**
-	 * jqFilter  jQuery jqGrid filter addon.
-	 * Copyright (c) 2011-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 *
-	 * The work is inspired from this Stefan Pirvu
-	 * http://www.codeproject.com/KB/scripting/json-filtering.aspx
-	 **/
+
 	// begin module grid.filter
 	$.fn.jqFilter = function (arg) {
 		if (typeof arg === "string") {
@@ -12475,27 +12431,6 @@
 	});
 	// end module grid.filter
 
-	/**
-	 * The below work is licensed under Creative Commons GNU LGPL License.
-	 *
-	 * Original work:
-	 *
-	 * License:     http://creativecommons.org/licenses/LGPL/2.1/
-	 * Author:      Stefan Goessner/2006
-	 * Web:         http://goessner.net/
-	 *
-	 * Modifications made:
-	 * Version:     0.9-p5
-	 * Description: Restructured code, JSLint validated (no strict whitespaces),
-	 *  			added handling of empty arrays, empty strings, and int/floats values.
-	 * Author:      Michael Schøler/2008-01-29
-	 * Web:         http://michael.hinnerup.net/blog/2008/01/26/converting-json-to-xml-and-xml-to-json/
-	 *
-	 * Description: json2xml added support to convert functions as CDATA
-	 * so it will be easy to write characters that cause some problems when convert
-	 *
-	 * Author:      Tony Tomov
-	 **/
 	// begin module jsonxml
 	var xmlJsonClass = {
 			// Param "xml": Element or document DOM node.
@@ -12774,15 +12709,7 @@
 	window.xmlJsonClass = xmlJsonClass;
 	// end module jsonxml
 
-	/**
-	 * jqGrid extension for form editing Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
+
 	// begin module grid.formedit
 	var jgridFeedback = jgrid.feedback, fullBoolFeedback = jgrid.fullBoolFeedback, builderFmButon = jgrid.builderFmButon,
 		addFormIcon = function ($fmButton, iconInfos, commonIcon) {
@@ -15951,13 +15878,7 @@
 	});
 	// end module grid.grouping
 
-	/**
-	 * jqGrid extension for constructing Grid Data from external file
-	 * Tony Tomov tony@trirand.com, http://trirand.com/blog/
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
+
 	// begin module grid.import
 	$.jgrid.extend({
 		jqGridImport: function (o) {
@@ -16160,15 +16081,7 @@
 	});
 	// end module grid.import
 
-	/**
-	 * jqGrid extension for manipulating Grid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com,  http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
+
 	// begin module grid.inlinedit
 	var editFeedback = function (o) {
 			var args = $.makeArray(arguments).slice(1);
@@ -17810,17 +17723,6 @@
 	});
 	// end module grid.jqueryui
 
-	/**
-	 * jqGrid pivot functions
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com, http://trirand.com/blog/
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * The module is created initially by Tony Tomov and it's full rewritten
-	 * for free jqGrid: https://github.com/free-jqgrid/jqGrid by Oleg Kiriljuk
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	*/
 	// begin module grid.pivot
 	function Aggregation(aggregator, context, pivotOptions) {
 		if (!(this instanceof Aggregation)) {
@@ -18632,15 +18534,6 @@
 	});
 	// end module grid.pivot
 
-	/**
-	 * jqGrid extension for SubGrid Data
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
 	// begin module grid.subgrid
 	var subGridFeedback = function () {
 			var args = $.makeArray(arguments);
@@ -18973,19 +18866,14 @@
 	});
 	// end module grid.subgrid
 
-	/**
-	 Transform a table to a jqGrid.
-	 Peter Romianowski <peter.romianowski@optivo.de>
-	 If the first column of the table contains checkboxes or
-	 radiobuttons then the jqGrid is made selectable.
-	*/
+
 	// begin module grid.tbltogrid
 	window.tableToGrid = function (selector, options) {
 		$(selector).each(function () {
 			var self = this, $self = $(this), w, inputCheckbox, inputRadio, selectMultiple, selectSingle, selectable, a, id,
 				colModel = [], colNames = [], data = [], rowIds = [], rowChecked = [];
 			if (self.grid) {
-				return;//Adedd by Tony Tomov
+				return;
 			}
 			// This is a small "hack" to make the width of the jqGrid 100%
 			$self.width("99%");
@@ -19076,15 +18964,7 @@
 	};
 	// end module grid.tbltogrid
 
-	/**
-	 * jqGrid extension - Tree Grid
-	 * Copyright (c) 2008-2014, Tony Tomov, tony@trirand.com
-	 * Copyright (c) 2014-2019, Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Copyright (c) 2023, rany2, ranygh@riseup.net
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	**/
+
 	// begin module grid.treegrid
 	var treeGridFeedback = function () {
 			var args = $.makeArray(arguments);
@@ -20130,20 +20010,7 @@
 	jqmHash = $.jqm.hash;
 	// end module jqmodal
 
-	/**
-	 * formatter for values but most of the values if for jqGrid
-	 * Some of this was inspired and based on how YUI does the table datagrid but in jQuery fashion
-	 * we are trying to keep it as light as possible
-	 * Joshua Burnett josh@9ci.com
-	 * http://www.greenbill.com
-	 *
-	 * Changes from Tony Tomov tony@trirand.com
-	 * Changed by Oleg Kiriljuk, oleg.kiriljuk@ok-soft-gmbh.com
-	 * Dual licensed under the MIT and GPL licenses:
-	 * http://www.opensource.org/licenses/mit-license.php
-	 * http://www.gnu.org/licenses/gpl-2.0.html
-	 *
-	**/
+
 	// begin module jquery.fmatter
 	$.fmatter = $.fmatter || {};
 	var fmatter = $.fmatter,
