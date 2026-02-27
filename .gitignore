@@ -3,4 +3,5 @@ node_modules
 .tscache
 js/min
 *.min.js
+js/min/i18n/min
 
