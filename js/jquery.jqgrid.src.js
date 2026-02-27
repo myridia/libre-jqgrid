@@ -1009,8 +1009,13 @@
 		isFunction: function (value) {
 			return typeof value === "function";
 		},
-		trim: function (value) {
+	        trim: function (value) {
+		    if(value) {
 			return String.prototype.trim.call(value);
+		    }
+		    else {
+			return "";
+		    }
 		},
 		htmlDecode: function (value) {
 			if (value && (value === "&nbsp;" ||
