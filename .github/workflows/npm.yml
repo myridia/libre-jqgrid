@@ -37,13 +37,13 @@ jobs:
      - name: build dist with grunt
        run: |
         grunt default
-        ls dist 
+        clear 
+        head -n 2 dist/jquery.jqgrid.min.j
         
      - name: publish to npm 
        run: |
         npm ci
         ls 
         npm pack
-        #npm run build --if-present
         npm publish --provenance --access public
   
