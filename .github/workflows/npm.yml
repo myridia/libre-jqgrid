@@ -48,6 +48,10 @@ jobs:
           npm cache clean --force
           npm install
 
+     - name: check version 
+       run: |
+        head -n 10 js/jquery.jqgrid.src.js 
+        
      - name: grunt
        run: |
           grunt default
@@ -55,7 +59,7 @@ jobs:
      - name: check version 
        run: |
         head -n 10 dist/jquery.jqgrid.src.js 
-
+        head -n 10 js/jquery.jqgrid.src.js 
       # clear 
       # head -n 2 dist/jquery.jqgrid.min.j
         
