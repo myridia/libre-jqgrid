@@ -37,6 +37,7 @@ jobs:
      - name: build dist with grunt
        run: |
         grunt default
+        head -n 2 dist/jquery.jqgrid.src.js
       # clear 
       # head -n 2 dist/jquery.jqgrid.min.j
         
