@@ -24,17 +24,21 @@ jobs:
      - name: checkout 
        uses: actions/checkout@v6
        
-     - name: setup  node
-       uses: actions/setup-node@v4
-       with:
-         node-version: '24.x'            # Your node version
-         registry-url: 'https://registry.npmjs.org'
-         always-auth: true
+
 
      - name: check version 
        run: |
-        head -n 2 dist/jquery.jqgrid.src.js
         head -n 10 js/jquery.jqgrid.src.js   
+
+
+    # - name: setup  node
+    #   uses: actions/setup-node@v4
+    #   with:
+    #     node-version: '24.x'            # Your node version
+    #     registry-url: 'https://registry.npmjs.org'
+    #     always-auth: true
+
+
         
      #- name: install npm
      #  run: |
