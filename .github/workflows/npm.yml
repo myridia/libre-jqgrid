@@ -19,9 +19,6 @@ jobs:
           const token = await core.getIDToken();
           core.info(`OIDC token: ${token.substring(0,20)}...`);
 
-     - name: Delete all caches
-       run: gh cache delete --all
-    
 
 
      - name: checkout 
@@ -33,18 +30,19 @@ jobs:
          node-version: '24.x'            # Your node version
          registry-url: 'https://registry.npmjs.org'
          always-auth: true
-         
-     - name: install npm
-       run: |
-          ls 
-          npm cache clean --force
-          npm install
 
-     - name: build dist with grunt
+     - name: check version 
        run: |
-        grunt default
         head -n 2 dist/jquery.jqgrid.src.js
-        head -n 10 js/jquery.jqgrid.src.js
+        head -n 10 js/jquery.jqgrid.src.js   
+        
+     #- name: install npm
+     #  run: |
+     #     ls 
+     #     npm cache clean --force
+     #     npm install
+
+
 
       # clear 
       # head -n 2 dist/jquery.jqgrid.min.j
