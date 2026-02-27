@@ -42,13 +42,19 @@ jobs:
        run: |
         head -n 10 js/jquery.jqgrid.src.js 
         
-     #- name: install npm
-     #  run: |
-     #     ls 
-     #     npm cache clean --force
-     #     npm install
+     - name: install npm
+       run: |
+          ls 
+          npm cache clean --force
+          npm install
 
+     - name: grunt
+       run: |
+          grunt default
 
+     - name: check version 
+       run: |
+        head -n 10 dist/jquery.jqgrid.src.js 
 
       # clear 
       # head -n 2 dist/jquery.jqgrid.min.j
