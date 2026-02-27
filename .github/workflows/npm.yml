@@ -21,6 +21,9 @@ jobs:
 
      - name: Delete all caches
        run: gh cache delete --all --repo ${{ github.repository }}
+       env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
      - name: checkout 
        uses: actions/checkout@v6
