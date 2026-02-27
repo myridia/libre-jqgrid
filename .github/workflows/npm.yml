@@ -19,31 +19,54 @@ jobs:
           const token = await core.getIDToken();
           core.info(`OIDC token: ${token.substring(0,20)}...`);
 
+
+
      - name: checkout 
-       uses: actions/checkout@v4
+       uses: actions/checkout@v6
        
+
+
+     - name: check version 
+       run: |
+        head -n 10 js/jquery.jqgrid.src.js   
+
+
      - name: setup  node
        uses: actions/setup-node@v4
        with:
          node-version: '24.x'            # Your node version
          registry-url: 'https://registry.npmjs.org'
          always-auth: true
-         
+
+     - name: check version 
+       run: |
+        head -n 10 js/jquery.jqgrid.src.js 
+        
      - name: install npm
        run: |
           ls 
+          npm cache clean --force
           npm install
 
-     - name: build dist with grunt
+     - name: check version 
        run: |
-        grunt default
-        ls dist 
+        head -n 10 js/jquery.jqgrid.src.js 
         
-     - name: publish to npm 
+     - name: grunt
        run: |
-        npm ci
-        ls 
-        npm pack
-        #npm run build --if-present
-        npm publish --provenance --access public
+          grunt default
+
+     - name: check version 
+       run: |
+        head -n 10 dist/jquery.jqgrid.src.js 
+        head -n 10 js/jquery.jqgrid.src.js 
+      # clear 
+      # head -n 2 dist/jquery.jqgrid.min.j
+        
+     #- name: publish to npm 
+     #  run: |
+     #   npm ci
+     #   ls 
+     #   npm pack
+     #   npm publish --provenance --access public
   
