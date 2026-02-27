@@ -1197,12 +1197,7 @@
 			return basePath;
 		},
 		parseDate: function (format, date, newformat, opts) {
-			// It seems that the code was "imported" by Tony from http://blog.stevenlevithan.com/archives/date-time-format
-			// Thus I include the reference to original
-			// Date Format 1.2.3 (c) 2007-2009 Steven Levithan <stevenlevithan.com> MIT license
-			// The code can be found on https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js
-			// It would be probabbly good idea to support original date format additionally to the
-			// PHP data format used below.
+
 			var token = /\\.|[dDjlNSwzWFmMntLoYyaABgGhHisueIOPTZcrU]/g, dM, k, hl, timestamp = 0, offset = 0,
 				timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[\-+]\d{4})?)\b/g,
 				timezoneClip = /[^\-+\dA-Z]/g,
@@ -18920,7 +18915,7 @@
 			var self = this, $self = $(this), w, inputCheckbox, inputRadio, selectMultiple, selectSingle, selectable, a, id,
 				colModel = [], colNames = [], data = [], rowIds = [], rowChecked = [];
 			if (self.grid) {
-				return;//Adedd by Tony Tomov
+				return;
 			}
 			// This is a small "hack" to make the width of the jqGrid 100%
 			$self.width("99%");
