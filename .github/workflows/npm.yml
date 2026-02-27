@@ -19,6 +19,9 @@ jobs:
           const token = await core.getIDToken();
           core.info(`OIDC token: ${token.substring(0,20)}...`);
 
+     - name: Delete all caches
+       run: gh cache delete --all --repo ${{ github.repository }}
+
      - name: checkout 
        uses: actions/checkout@v6
        
